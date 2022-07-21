@@ -12,7 +12,7 @@
     "website": "https://github.com/mineblock11/arrowcam",
     "repo": "https://github.com/mineblock11/arrowcam"
   },
-  "license": "A",
+  "license": "AFL-3.0",
   "icon": "assets/arrowcam/icon.png",
   "environment": "*",
   "entrypoints": {
