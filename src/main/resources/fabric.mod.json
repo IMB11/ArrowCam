@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "arrowcam",
+  "version": "${version}",
+  "name": "ArrowCam",
+  "description": "Fabric port of ArrowCam",
+  "authors": [
+    "mineblock11"
+  ],
+  "accessWidener": "ac.accesswidener",
+  "contact": {
+    "website": "https://github.com/mineblock11/arrowcam",
+    "repo": "https://github.com/mineblock11/arrowcam"
+  },
+  "license": "MPL-2.0",
+  "icon": "assets/arrowcam/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "mine.block.arrowcam.client.ArrowCamClient"
+    ],
+    "main": [
+      "mine.block.arrowcam.ArrowCam"
+    ]
+  },
+  "mixins": [
+    "ArrowCam.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.8",
+    "minecraft": "1.19"
+  }
+}

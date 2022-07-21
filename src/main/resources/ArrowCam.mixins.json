@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "mine.block.arrowcam.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "client": [
+    "ArrowEntityMixin",
+    "CameraMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
