@@ -1,26 +1,28 @@
 package mine.block.arrowcam.client;
 
-import mine.block.arrowcam.ArrowCam;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
-import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.minecraft.client.MinecraftClient;
-import net.minecraft.client.option.Perspective;
-import net.minecraft.client.render.entity.EntityRenderer;
-import net.minecraft.client.render.entity.EntityRendererFactory;
-import net.minecraft.client.render.entity.EntityRenderers;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.MarkerEntity;
-import net.minecraft.entity.projectile.ArrowEntity;
 import net.minecraft.entity.projectile.PersistentProjectileEntity;
-import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
 
 @Environment(EnvType.CLIENT)
 public class ArrowCamClient implements ClientModInitializer {
 
     public static boolean ENABLED = false;
+
+    public static void setENABLED(boolean val) {
+        ENABLED = val;
+
+        MinecraftClient mc = MinecraftClient.getInstance();
+
+        if(ENABLED) {
+            mc.options.hudHidden = true;
+        } else {
+            mc.options.hudHidden = false;
+        }
+    }
+    public static PersistentProjectileEntity target;
 //    public static boolean hideGUI;
 //
 //    /** Stores the FOV before entering arrow cam */

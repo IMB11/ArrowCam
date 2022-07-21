@@ -12,7 +12,7 @@
     "website": "https://github.com/mineblock11/arrowcam",
     "repo": "https://github.com/mineblock11/arrowcam"
   },
-  "license": "MPL-2.0",
+  "license": "A",
   "icon": "assets/arrowcam/icon.png",
   "environment": "*",
   "entrypoints": {
